@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!--mobile viewport info-->
+        <meta name = ‘viewport’ content=‘width=device-width, initial-scale=1’>
+
+        <!--stylesheets-->
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+         <!--google font-->   
+         <link rel="preconnect" href="https://fonts.gstatic.com">
+         <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">  
+        
+    </head>
+    <body>
+        <div class = "navbar" id= "navigationBar">
+            <a href= "#main">Home</a>   
+            <a href = "travel.html">Travel</a>
+            <a href = "creativework.html" class = "active">Creative Work</a>
+            <a href = "heritage.html">Heritage</a>
+            <a href="javascript:void(0);" class="icon" onclick="navFunc()"> <i class="fa fa-bars"></i></a>
+        </div>
+        <script>
+            function navFunc() {
+              var x = document.getElementById("navigationBar");
+              if (x.className === "navbar") {
+                x.className += " responsive";
+              } else {
+                x.className = "navbar";
+              }
+            }
+        </script>
+
+    </body>
+</html>
