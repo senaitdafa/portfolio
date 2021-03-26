@@ -5,6 +5,8 @@ body{
     font-size: 24px;
     font-weight: 400;  
     margin: 0; 
+    color:#550000 ;
+
 }
 .navbar{
     overflow: hidden;
@@ -25,7 +27,7 @@ body{
     color: black;
   }
   .navbar a.active {
-    text-decoration:double;
+    text-decoration: underline;
     text-decoration-color: #550000;
     background-color: rgba(255,151,0,0.5);
     color:#550000 ;
@@ -34,35 +36,50 @@ body{
   .navbar .icon {
     display: none;
   }
-
-
-  .grid-container{
-    display:grid;
+ html, body {
     height: 100%;
     width: 100%;
+    margin: 0;
+}
+
+  .container{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height:300%;
+
   }
 
   .item1{
+      height:100%;
       background-color: #ff9700;
-      text-align:center;
-
+      display:flex;
+      justify-content: center;
+      align-items:center;
+    font-size: 80px;
   }
 
   /*gradient css referenced from cssgradient.io*/
   .item2{
+    display:flex;
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,151,0,1) 100%);
-  }
+    max-height: 100%;
+    max-width: 100%;
+    overflow: none;
+flex-direction: row;
+    align-items:center;
+    justify-content: center;;
+    flex-wrap: nowrap;
 
-  .item3{
-    background: rgb(31,107,144);
-    background: linear-gradient(0deg, rgba(31,107,144,1) 0%, rgba(255,255,255,1) 100%);
-  }
-
-
-.item4{
-    background-color: #1f6b90;
 }
+
+.item3{
+    background-color: white;
+    height: 100%;
+}
+  
+
 footer{
     font-family: 'GFS Didot', serif;
     font-size: 24px;
