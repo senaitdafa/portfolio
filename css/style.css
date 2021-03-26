@@ -1,4 +1,6 @@
-.body{
+
+
+body{
     font-family: 'GFS Didot', serif;
     font-size: 24px;
     font-weight: 400;  
@@ -6,7 +8,7 @@
 }
 .navbar{
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(255,151,0,1);
 
 }
 .navbar a {
@@ -16,19 +18,63 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    color:#550000 ;
   }
   .navbar a:hover {
-    background-color: #ddd;
+    background-color: rgb(221, 221, 221);
     color: black;
   }
   .navbar a.active {
-    background-color: #4CAF50;
-    color: white;
+    text-decoration:double;
+    text-decoration-color: #550000;
+    background-color: rgba(255,151,0,0.5);
+    color:#550000 ;
   }
   
   .navbar .icon {
     display: none;
   }
+
+
+  .grid-container{
+    display:grid;
+    height: 100%;
+    width: 100%;
+  }
+
+  .item1{
+      background-color: #ff9700;
+      text-align:center;
+
+  }
+
+  /*gradient css referenced from cssgradient.io*/
+  .item2{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,151,0,1) 100%);
+  }
+
+  .item3{
+    background: rgb(31,107,144);
+    background: linear-gradient(0deg, rgba(31,107,144,1) 0%, rgba(255,255,255,1) 100%);
+  }
+
+
+.item4{
+    background-color: #1f6b90;
+}
+footer{
+    font-family: 'GFS Didot', serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+    /*
+  turn off animation here
+  @media screen{
+    
+  }
+  */
   @media screen and (min-width: 400px) {
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
