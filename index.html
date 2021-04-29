@@ -1,50 +1,51 @@
-<!--stylesheets-->
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <!--mobile viewport info-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="utf-8">
+    <!--mobile viewport info-->
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1">
 
-        <!--stylesheets-->
-        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css"> 
-        <!--google font-->   
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">  
-        <Title> Senait Dafa</Title>
-    </head>
-    <body>
-        <div class = "navbar" id= "navigationBar">
-            <a href= "#main" class = "active">Home</a>   
-            <a href = "travel.html">Travel</a>
-            <a href = "creativework.html">Creative Work</a>
-            <a href = "heritage.html">Heritage</a>
-            <a href="javascript:void(0);" class="icon" onclick="navFunc()"> <i class="fa fa-bars"></i></a>
+    <!--stylesheets-->
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--google font-->   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">  
+    <title>Home</title>
+  </head>
+  <body class="home-body">
+    <div class="topnav">
+      <a href="index.html" id = "link" class="active">Home</a>
+      <a href="travel.html" id = "link" >Travel</a>
+      <a href="reads.html" id = "link" >Reads</a>
+      <a href="contact.html"id = "link" >Contact</a>
+    </div> 
+    <div class="back-image">
+      <div class="title-container">
+        <h1 class="name">Senait Dafa</h1>
+      </div>
+    </div>
+    <nav id="main" class="main-container">
+      
+      <div class="story">
+        <div class="vid">
+            <h2>About Me</h2>
+          </div>
+        <div class="pic1"></div>       
+        <div class="txt1">
+          <p class="story-text">One day a friend asked me <br><em>"What have you done recently that brought you joy?"<br></em>I realized I hadn't taken the time to think about it before<br>So, decided to give it a shot. <br>‍<br>This is a collection of all of my favorite things.<br> </p>‍
+       </div>
+        <div class="txt2"><h3>Heritage</h3><p class="story-text">The long form of my name is Senait Habte Dafa Jatu Manda Custa Matcha Dalle Darre Gumbo Oroma. Each one of my last names represents my paternal ancestor beginning with my father Habte, my grandpa Dafa, and so on. My last, last name is the founding father of my dad's ethic group: the Oroma people of Ethiopia.  Ioften feel isolated from my family's culture, but in those moments, remembering the meaning of my name helps.</p>
         </div>
-        <script>
-            function navFunc() {
-              var x = document.getElementById("navigationBar");
-              if (x.className === "navbar") {
-                x.className += " responsive";
-              } else {
-                x.className = "navbar";
-              }
-            }
-        </script>
-        <div class = "container">
-            <div class = "item1">Senait's Space</div>
-            <div class = "item2">
-                <div class = "portrait"> <img src ="https://senaitdafa.github.io/portfolio/images/senait.jpeg"> </div>
-                <div class = "intro"><p>Hi, I'm Senait! Welcome to my site</p></div>
-                </div>
-                <p></p>
-            <div class = "item3"></div>
-
-        </div>
-    </body>
-    <footer>Developed by Senait Dafa</footer>
-        
-</html>
+         <div class="pic2"></div>
+          <div class="pic3"></div>
+      <div class="txt3"><h3>Travel</h3><p class="story-text">During my first trip to Cuba, I realized I could speak Spanish much better than I thought I could.<br>At this table in Vinales, I had the best meal of my life:<br>Ropa Vieja</p></div>
+     <div class="txt4"><h3>Reads</h3><p class="story-text">This photo was taken at an unmarked, closed, and seemingly abandoned used book store in Ypsilanti, MI this past February.<br>I couldn't help but feel sad about the loss of another local bookstore<br><br>As I progress with my degree, I find it more and more difficult to make time for reading. However, I have managed to get a few reads in this year that I would like to share, as well as the few that let me down.</p></div>
+      <div class="pic4"></div>
+      
+      </div>
+    </nav>
+    <div class="footer">
+      <div class="text-block">Developed by Senait Dafa<br>‍</div>
+    </div>
+  </body>

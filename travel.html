@@ -3,34 +3,101 @@
     <head>
         <meta charset="utf-8">
         <!--mobile viewport info-->
-        <meta name = ‘viewport’ content=‘width=device-width, initial-scale=1’>
-
+        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1">
         <!--stylesheets-->
-        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-         <!--google font-->   
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+ 
+        <!--google font-->   
          <link rel="preconnect" href="https://fonts.gstatic.com">
          <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">  
         
     </head>
-    <body>
-        <div class = "navbar" id= "navigationBar">
-            <a href= "index.html">Home</a>   
-            <a href = "travel.html" class = "active">Travel</a>
-            <a href = "creativework.html">Creative Work</a>
-            <a href = "heritage.html">Heritage</a>
-            <a href="javascript:void(0);" class="icon" onclick="navFunc()"> <i class="fa fa-bars"></i></a>
-        </div>
-        <script>
-            function navFunc() {
-              var x = document.getElementById("navigationBar");
-              if (x.className === "navbar") {
-                x.className += " responsive";
-              } else {
-                x.className = "navbar";
-              }
-            }
-        </script>
+    <travel>
+      <div class="topnav">
+        <a href="index.html" >Home</a>
+        <a href="travel.html" class="active">Travel</a>
+        <a href="reads.html" >Reads</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      
+        <!-- beginning of flex container -->
+        <div class = "flex-contain">
+          <!-- col1 -->
+          <div class= "col">
+            <div class ="img-contain">
+                <img src = "images/JT-1.jpeg">
+                <h5><span>Joshua Tree, California<br>May 2019<span></h5>
 
-    </body>
+            </div>
+            <div class  = "img-contain">
+              <img src = "images/SB-4.jpg">
+              <h5><span>Santa Barbara, California<br>February 2020<span></h5>
+
+            </div>
+            <div class  = "img-contain">
+              <img src = "images/GC-1.jpg"> 
+              <h5><span>The Grand Canyon<br>June 2018<span></h5>
+  
+            </div>   
+            <div class ="img-contain">   
+                <img src = "images/cuba 2.jpeg">
+                <h5><span>Havana, Cuba<br>July 2017<span></h5>
+            </div>
+            <div class  = "img-contain">
+                <img src = "images/alps.jpeg">
+                <h5><span>French Alps<br>June 2012<span></h5>
+
+            </div>  
+          </div>
+          <!--  col2 -->
+          <div class= "col">
+              <div class  = "img-contain">
+                <img src = "images/SB-3.jpg">
+                <h5><span>Santa Barbara, California<br>February 2020<span></h5>
+
+              </div> 
+              <div class ="img-contain">
+                <img src = "images/JT-2.JPG">
+                <h5><span>Joshua Tree, California<br>May 2019<span></h5>
+              </div>
+              <div class ="img-contain">
+                <img src = "images/GC 3.JPG">
+                <h5><span>The Grand Canyon<br>June 2018<span></h5>
+              </div>
+              <div class ="img-contain">
+                <img src = "images/Germany.jpeg">
+                <h5><span>Bolanes, Germany<br>August 2015<span></h5>
+
+
+              </div>
+          </div>
+          <!--col3-->
+          <div class= "col">
+            <div class  = "img-contain">
+              <img src = "images/JT-3.JPG">
+              <h5><span>Joshua Tree, California<br>May 2019<span></h5>
+            </div> 
+            <div class ="img-contain">  
+              <img src = "images/SB-2.jpg">
+              <h5><span>Santa Barbara, California<br> February 2020<span></h5>
+
+            </div>
+            <div class  = "img-contain">
+              <img src = "images/GC-4.jpg">
+              <h5><span>The Grand Canyon<br>June 2018<span></h5>
+
+            </div> 
+            <div class  = "img-contain">
+              <img src = "images/cuba-5.jpg">
+              <h5><span>Havana, Cuba<br>July 2017<span></h5>
+            </div> 
+            <div class  = "img-contain">
+              <img src = "images/Cuba-4.JPG">
+              <h5><span>Havana, Cuba<br> July 2017<span></h5>
+            </div> 
+          </div>
+        </flex-contain>
+
+    </travel>
 </html>

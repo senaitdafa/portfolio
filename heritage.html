@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <!--mobile viewport info-->
-        <meta name = ‘viewport’ content=‘width=device-width, initial-scale=1’>
+        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1">
 
         <!--stylesheets-->
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">
@@ -11,25 +11,68 @@
          <!--google font-->   
          <link rel="preconnect" href="https://fonts.gstatic.com">
          <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">  
-    </head>
-    <body>
+        <title>Recent Reads</title>
+        </head>
+    <body class="reads-body">
         <div class = "navbar" id= "navigationBar">
-            <a href= "index.html">Home</a>   
-            <a href = "travel.html">Travel</a>
-            <a href = "creativework.html">Creative Work</a>
-            <a href = "heritage.html" class = "active">Heritage</a>
-            <a href="javascript:void(0);" class="icon" onclick="navFunc()"> <i class="fa fa-bars"></i></a>
-        </div>
-        <script>
-            function navFunc() {
-              var x = document.getElementById("navigationBar");
-              if (x.className === "navbar") {
-                x.className += " responsive";
-              } else {
-                x.className = "navbar";
-              }
-            }
-        </script>
+          <a href="javascript:void(0);" class="icon" onclick="navFunc()"> <i class="fa fa-bars"></i></a>
 
+          <a href= "index.html">Home</a>   
+          <a href = "travel.html" class = "active">Travel</a>
+          <a href = "creativework.html">Creative Work</a>
+          <a href = "heritage.html">Reads</a>
+      </div>
+      <script>
+          function navFunc() {
+            var x = document.getElementById("navigationBar");
+            if (x.className === "navbar") {
+              x.className += " responsive";
+            } else {
+              x.className = "navbar";
+            }
+          }
+      </script>
+      <div class="lib-label"><h1>Recent Reads<h1></div>
+      <div class="flex-lib">
+        <div class="shelf">
+          <h2 class="shelf-label">Favorites<h2>
+          <div class="book">
+            <h3 class="book-title">Edna</h3><img src="images/book7_edna.jpg" alt="Edna cover" class="book-cover" />
+            <p class="book-review"><strong>Overall Rating: 9/10<br><br></strong>‍I enjoyed the characters in this book tremendously. There were such a pleasure to read. I&#x27;m more of action and suspense fanatic, but I really enjoyed this feel good piece. It&#x27;s a quick read, perfect for a lazy Sunday afternoon.</p>
+          </div>
+          <div class="book">
+            <h3 class="book-title">My Hero Academia</h3><img src="images/book4.jpg" alt="My Hero Academia cover" class="book-cover" />
+            <p class="book-review"><strong>Overall Rating: 10/10<br><br></strong>‍I began this book because I fell in love with the Anime first, as many fans of the series do. The anime is responsible for the resurgence of manga popularity in recent years. I loved everything about this read; I could hardly put it down. It's an appropirate read for minors but manages to be sophisticaed enough for adults to enjoy as well.  </p>
+          </div>
+          <div class="book">
+            <h3 class="book-title">Attack on titan</h3><img src="images/book3.jpg" alt="Attack on Titan cover" class="book-cover" />
+            <p class="book-review"><strong>Overall Rating: 9/10<br><br></strong>‍Similar to the animated work, this book took some time to get into. However, it's worth it to do so. Attack on Titan is a masterwork; I haven't enjoyed a fantasy read this much since Game of Thrones. A slow beginning is typical of large scale fantasy work, however I did knock off a rating point for that. Not every series can start with the gusto of Harry Potter or Lord of the Rings, and the pace picks up eventually.  </p>
+          </div>
+          <div class="book">
+            <h3 class="book-title">Horimiya</h3><img src="images/book1.jpeg" alt="Horimiya cover" class="book-cover" />
+            <p class="book-review"><strong>Overall Rating: 8/10<br><br></strong>‍This book has become my personal favorite Murakami piece. Murakami does an amazing job blending reality, imaginary, and extraordinary in this modern magical realism novel. The stand out moments were the dream sequences, as he seamlessly wove in magical moments into reality. </p>
+          </div>
+          <div class="book">
+            <h3 class="book-title">1984</h3><img src="images/book8_murakami.jpg" alt="1984" class="book-cover" />
+            <p class="book-review"><strong>Overall Rating: 8/10<br><br></strong>‍This book has become my personal favorite Murakami piece. Murakami does an amazing job blending reality, imaginary, and extraordinary in this modern magical realism novel. The stand out moments were the dream sequences, as he seamlessly wove in magical moments into reality. </p>
+          </div>
+        </div>
+        <div class="shelf">
+          <h2 class ="shelf-label">Drops</h2>
+          <div class="book">
+            <h3 class="book-title">Kafka on the Shore</h3><img src="images/book9_kafka.jpg" alt="Kafka on the shore cover" class="book-cover" />
+            <p class="book-review"><strong>Overall Rating: 4/10<br><br></strong>‍Thematically, this book was very beautiful. however, there were too many uncomfortable scenes to read through, and I felt that it was almost done frivolously, for the drama. Not an easy read, which was surprising considering its popularity. <br><br></p>
+          </div>
+          <div class="book">
+            <h3 class = "book-title">At the Mountains of Madness</h3><img src="images/book6_mountains.jpeg" alt="At the Mountains of Madness" class="book-cover" />
+            <p class="book-review"><strong>Overall Rating: 3/10</strong><br><br>This book wasn't a particularly bad read, it just was a bit too predictable. It felt too similar to The Black Caludron. I wouldn't have minded if the writing was more interesting, but it fell flat.</p>‍
+          </div>
+          <div class="book">
+            <h3 class="book-title">Jujusu Kaisen</h3><img src="images/book2.jpg" alt="Jujutsu Kaisen" class="book-cover" />
+            <p class="book-review"><strong>Overall Rating: 2/10<br><br></strong>‍This book was a complete mess and I wasted my time reading. First, the story has nothing to do with Jujutsu. Sure, it has action but jujutsu was never specifically mentioned, and that makes no sense. Second, the timeline was arranged in a bizarre manner that made it too difficult for the reader to keep up.</p>
+          </div>
+        </div>
+      </div>
+  
     </body>
 </html>
